@@ -1,6 +1,6 @@
 import { LocalizationContent } from "./localization-content.type";
 
-export interface localization {
+export interface Localization {
     id:number;
     name: string;
     shortName: string;

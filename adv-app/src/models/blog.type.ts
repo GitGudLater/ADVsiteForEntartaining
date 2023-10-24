@@ -1,5 +1,5 @@
 export interface BlogContent {
     id: number;
-    date: Date;
+    date: string;
     content: string;
 }
