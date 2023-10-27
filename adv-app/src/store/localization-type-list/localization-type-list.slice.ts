@@ -9,9 +9,13 @@ export const LocalizationTypeListAdapter = createEntityAdapter<LocalizationTypeL
 export const LocalizationTypeListSlice = createSlice({
     name: 'LocalizationTypeList',
     initialState: LocalizationTypeListAdapter.getInitialState({
-      loading: 'idle'
+      loading: 'idle',
+      selected: "Eng"
     }),
     reducers: {
+      setSelectedLocalizationLanguage(state, action: PayloadAction<string>) {
+        state.selected = action.payload;
+      },
     },
     extraReducers: (builder) => {
       builder

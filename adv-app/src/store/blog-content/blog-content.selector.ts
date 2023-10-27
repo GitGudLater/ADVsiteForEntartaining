@@ -3,4 +3,8 @@ import { blogAdapter } from "./blog-content.slice";
 
 const blogState = (state:RootState) => state.blog;
 
-export const blogEntitySelectors = blogAdapter.getSelectors(blogState)
+const blogEntitySelectors = blogAdapter.getSelectors(blogState)
+
+export const blogSelectors = {
+    blogEntitySelectors,
+}
