@@ -17,13 +17,13 @@ function App() {
   useEffect(() => {dispatch(fetchBlogContent())}, []);
   useEffect(() => {dispatch(fetchLocalizationTypeList())}, []);
   useEffect(() => {dispatch(fetchLocalizationContent(currentInitialLanguage))}, [currentInitialLanguage]);
-  const localization = useSelector(localizationContentSelectors.getLocalizationContent);
+  const localizationContent = useSelector(localizationContentSelectors.getLocalizationContent);
 
   return (
     <div className="App">
-      <Header {...localization}/>
-      <Body {...localization}/>
-      <Footer {...localization}/>
+      <Header {...localizationContent}/>
+      <Body {...localizationContent}/>
+      <Footer {...localizationContent}/>
     </div>
   );
 }
