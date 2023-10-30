@@ -3,8 +3,9 @@ import { useSelector } from "react-redux";
 import { blogSelectors } from "../../store/blog-content/blog-content.selector";
 import './Body.scss';
 import { ButtonLight } from "../buttons/button-light/Button-light";
+import { LocalizationProps } from "../../models/localization-props.type";
 
-export const Body: FC<Map<string,string>> = (localizationContent) => {
+export const Body: FC<LocalizationProps> = ({localizationContent}) => {
     const blog = useSelector(blogSelectors.blogEntitySelectors.selectAll);
 
     return (

@@ -2,13 +2,14 @@ import { FC } from "react";
 import { useSelector } from "react-redux";
 import { localizationTypesSelectors } from "../../store/localization-type-list/localization-type-list.selector";
 import './Header.scss';
-import { DropDown, DropDownProps } from "../buttons/drop-down/Drop-down";
+import { DropDown } from "../buttons/drop-down/Drop-down";
 import { ButtonLight } from "../buttons/button-light/Button-light";
 import { ButtonDark } from "../buttons/button-dark/Button-dark";
+import { LocalizationProps } from "../../models/localization-props.type";
+import { DropDownProps } from "../../models/drop-down-props.type";
 
-export const Header: FC<Map<string,string>> = (localizationContent) => {
+export const Header: FC<LocalizationProps> = ({localizationContent}) => {
     const localizationTypes = useSelector(localizationTypesSelectors.localizationTypeEntitySelectors.selectAll);
-
     return (
         <div>
             {localizationContent.get("about_us_header_ancor")}

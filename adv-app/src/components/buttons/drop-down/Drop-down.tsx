@@ -1,10 +1,5 @@
 import { FC } from "react";
-import { LocalizationTypeListElement } from "../../../models/localization-type-list-element.type";
-
-export interface DropDownProps {
-    selected: string;
-    content: LocalizationTypeListElement[];
-}
+import { DropDownProps } from "../../../models/drop-down-props.type";
 
 export const DropDown: FC<DropDownProps> = (props) => {
     return(

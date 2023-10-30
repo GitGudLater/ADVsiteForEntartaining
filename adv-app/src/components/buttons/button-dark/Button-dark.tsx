@@ -1,8 +1,5 @@
 import { FC } from "react";
-
-export interface ButtonProps {
-    localizationContent: string;
-}
+import { ButtonProps } from "../../../models/button-props.type";
 
 export const ButtonDark: FC<ButtonProps> = ({localizationContent}) => {
     return(

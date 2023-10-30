@@ -21,9 +21,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header {...localizationContent}/>
-      <Body {...localizationContent}/>
-      <Footer {...localizationContent}/>
+      <Header localizationContent={localizationContent}/>
+      <Body localizationContent={localizationContent}/>
+      <Footer localizationContent={localizationContent}/>
     </div>
   );
 }

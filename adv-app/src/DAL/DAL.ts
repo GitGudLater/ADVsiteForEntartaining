@@ -7,19 +7,19 @@ const localizationsUrlFolder = '../assets/localizations/';
 const blogUrlFolder = "../assets/blog/";
 
 const getLocalization = async (localizationShortPrefix:string): Promise<Localization> => {
-    const url=`${localizationsUrlFolder}${localizationShortPrefix}`;
+    const url=`${localizationsUrlFolder}${localizationShortPrefix}.json`;
     const response = await axios.get(url);
     return response.data;
 } 
 
 const getLocalizationsList = async (): Promise<LocalizationTypeListElement[]> => {
-    const url=`${localizationsUrlFolder}localizations-list`;
+    const url=`${localizationsUrlFolder}localizations-list.json`;
     const response = await axios.get(url);
     return response.data;
 }
 
 const getBlog = async (): Promise<BlogContent[]> => {
-    const url=`${blogUrlFolder}blog-content`;
+    const url=`${blogUrlFolder}blog-content.json`;
     const response = await axios.get(url);
     return response.data;
 }
