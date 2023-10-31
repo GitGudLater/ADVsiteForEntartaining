@@ -1,7 +1,7 @@
 import './App.css';
 import { Header } from './header/Header';
 import { Footer } from './footer/Footer';
-import { Body } from './body/Body';
+import { HomePage } from './home-page/HomePage';
 import { useAppDispatch } from '../store/store.hooks';
 import { useEffect } from 'react';
 import { fetchBlogContent } from '../store/blog-content/blog-content.thunk';
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header localizationContent={localizationContent}/>
-      <Body localizationContent={localizationContent}/>
+      <HomePage localizationContent={localizationContent}/>
       <Footer localizationContent={localizationContent}/>
     </div>
   );
