@@ -1,8 +1,26 @@
 import { FC } from "react";
+import { useSelector } from "react-redux";
+import { blogSelectors } from "../../store/blog-content/blog-content.selector";
 import './Body.scss';
+import { ButtonLight } from "../buttons/button-light/Button-light";
+import { LocalizationProps } from "../../models/localization-props.type";
 
-export const Body: FC = () => {
+export const Body: FC<LocalizationProps> = ({localizationContent}) => {
+    const blog = useSelector(blogSelectors.blogEntitySelectors.selectAll);
+
     return (
-        <div>Body component</div>
+        <div>
+            {localizationContent.get("project_name_body_h1_up")}
+            {localizationContent.get("project_name_body_h1_btm")}
+            {localizationContent.get("project_name_body_h2")}
+            <ButtonLight {...{localizationContent:localizationContent.get("become_a_partner_body_btn") as string}}/>
+            {localizationContent.get("blog_body_h1")}
+            {blog.map( blogCard => 
+                <div key={blogCard.id}>
+                    {blogCard.content}
+                    {blogCard.date}
+                </div>    
+            )}
+        </div>
     );
 }

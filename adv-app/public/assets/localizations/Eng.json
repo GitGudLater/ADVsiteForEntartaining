@@ -1,0 +1,83 @@
+{
+    "id":1,
+    "name": "English",
+    "shortName": "Eng",
+    "content": [
+        {
+            "id": "about_us_header_ancor",
+            "content": "About us"
+        },
+        {
+            "id": "brands_header_ancor",
+            "content": "Brands"
+        },
+        {
+            "id": "commissions_header_ancor",
+            "content": "Commissions"
+        },
+        {
+            "id": "news_header_ancor",
+            "content": "News"
+        },
+        {
+            "id": "contact_us_header_ancor",
+            "content": "Contact us"
+        },
+        {
+            "id": "lang_header_btn",
+            "content": "En"
+        },
+        {
+            "id": "log_in_header_btn",
+            "content": "Log in"
+        },
+        {
+            "id": "sign_up_header_btn",
+            "content": "Sign up"
+        },
+        {
+            "id": "project_name_body_h1_up",
+            "content": "House of"
+        },
+        {
+            "id": "project_name_body_h1_btm",
+            "content": "Gambling"
+        },
+        {
+            "id": "project_name_body_h2",
+            "content": "Raise your ROI with direct advertiser"
+        },
+        {
+            "id": "become_a_partner_body_btn",
+            "content": "Become a partner"
+        },
+        {
+            "id": "blog_body_h1",
+            "content": "Blog"
+        },
+        {
+            "id": "terms_and_conditions_footer_link",
+            "content": "Terms & Conditions"
+        },
+        {
+            "id": "cookies_footer_link",
+            "content": "Cookies"
+        },
+        {
+            "id": "contacts_footer_link",
+            "content": "Contacts"
+        },
+        {
+            "id": "careers_footer_link",
+            "content": "Careers"
+        },
+        {
+            "id": "brand_guide_footer_link",
+            "content": "Brand Guide"
+        },
+        {
+            "id": "our_social_media_footer_group_heading",
+            "content": "our social media:"
+        }
+    ]
+}

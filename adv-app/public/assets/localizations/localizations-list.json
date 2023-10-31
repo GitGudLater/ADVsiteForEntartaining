@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "name": "English",
+        "shortName": "Eng"
+    },
+    {
+        "id":2,
+        "name": "Русский",
+        "shortName": "Rus"
+    }
+]
