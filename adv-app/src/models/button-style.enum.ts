@@ -1,4 +1,4 @@
 export enum ButtonStyle {
-    Light = 'light',
-    Dark = 'dark'
+    Light = 'btn_light',
+    Dark = 'btn_dark'
 }

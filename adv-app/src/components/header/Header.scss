@@ -1,0 +1,46 @@
+.header {
+    margin: 16px 100px 16px 100px;
+    border: solid;
+    border-width: 4px;
+    border-radius: 64px;
+    border-color: #478BF9;
+    padding: 24px 48px 24px 48px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.ancor:visited, .ancor:active, .ancor:link {
+    display: block;
+    align-self: center;
+    font: Lexend;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav-menu{
+    &_container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 32px;
+    }
+    &_element{
+        padding: 8px;
+        flex:  0 0 auto;
+    }
+}
+
+.header-authorization{
+    &_container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 14px;
+    }
+}

@@ -11,30 +11,24 @@ export const HomePage: FC<LocalizationProps> = ({localizationContent}) => {
 
     return (
         <section className="home-page">
-            <div className="home-page headings_container">
-                <div className="home-page headings_element">
-                    <h1>{localizationContent.get("project_name_body_h1_up")}</h1>
-                </div>
-                <div className="home-page headings_element">
-                    <h1>{localizationContent.get("project_name_body_h1_btm")}</h1>
-                </div>
-                <div className="home-page headings_element">
-                    <h2>{localizationContent.get("project_name_body_h2")}</h2>
-                </div>
-                <div className="home-page headings_element">
-                    <Button {...{localizationContent:localizationContent.get("become_a_partner_body_btn") as string, buttonStyle: ButtonStyle.Light}}/>
-                </div>
+            <div className="home-page-headings_container">
+                <h1 className="home-page-headings_element upper-heading">{localizationContent.get("project_name_body_h1_up")}</h1>
+                <h1  className="home-page-headings_element lower-heading">{localizationContent.get("project_name_body_h1_btm")}</h1>
+                <h2  className="home-page-headings_element sub-heading">{localizationContent.get("project_name_body_h2")}</h2>
+                <Button localizationContent={localizationContent.get("become_a_partner_body_btn") as string} buttonStyle={ButtonStyle.Light} />
             </div>
-            <div className="home-page blog">
-                <h1>{localizationContent.get("blog_body_h1")}</h1>
-                <ul  className="home-page blog_container">
-                {blog.map( blogCard => 
-                    <li key={blogCard.id}  className="home-page blog_element">
-                        {blogCard.content}
-                        {blogCard.date}
-                    </li>    
-                )} 
-                </ul>
+            <div className="home-page-blog">
+                <h1 className="home-page-blog_heading">{localizationContent.get("blog_body_h1")}</h1>
+                <div className="home-page-blog_content">
+                   <ul className="home-page-blog_container">
+                    {blog.map( blogCard => 
+                        <li key={blogCard.id}  className="home-page-blog_element">
+                            {blogCard.content}
+                            {blogCard.date}
+                        </li>    
+                    )} 
+                    </ul>
+                </div>
             </div>
         </section>
     );

@@ -1,0 +1,120 @@
+.home-page {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.home-page-headings {
+    &_container {
+        flex: 0 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-end;
+        justify-content: center;
+    }
+    &_element {
+        flex: 0 0 auto;
+        font: Lexend;
+        margin: 10px;
+    }
+}
+
+.home-page-blog {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    &_heading {
+        flex: 0 0 auto;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    &_content {
+        flex: 0 0 auto;
+        max-width: 530px;
+        height: 600px;
+        border: solid;
+        border-radius: 100px;
+        border-width: 3px;
+        border-color: #478BF9;
+        background-color: rgba(71, 139, 249, 0.12);
+        padding: 24px;
+        gap: 16px;
+        overflow: hidden;
+    }
+    &_container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        gap: 16px;
+        max-height: 100%;
+        overflow-x: hidden;    
+    }
+    &_container::-webkit-scrollbar {
+        background: none;
+    }
+    
+    &_container::-webkit-scrollbar-track-piece {
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+    
+    &_container::-webkit-scrollbar-thumb {
+        height: 400px;
+        width: 3px;
+        border-radius: 10px;
+        background-color: rgb(29, 91, 190);
+    }
+    
+    &_container::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(71, 139, 249, 1);
+        width: 5px;
+    }
+    &_element {
+        transition: all 0.5s ease-out;
+        display: block;
+        max-width: 100%;
+        border-radius: 196px;
+        padding: 16px 64px 16px 64px;
+        background-color: rgba(30, 18, 49, 1);
+        cursor: default;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-end;
+        justify-content: center;
+    }
+    &_element:hover {
+        background-color: rgba(71, 139, 249, 1);
+    }
+}
+
+.upper-heading {
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.lower-heading {
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
+    color: #478BF9;
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
