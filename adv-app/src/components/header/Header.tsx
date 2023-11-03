@@ -6,6 +6,7 @@ import { DropDown } from "../buttons/drop-down/Drop-down";
 import { Button } from "../buttons/button/Button";
 import { LocalizationProps } from "../../models/localization-props.type";
 import { ButtonStyle } from "../../models/button-style.enum";
+import { DropdownStyle } from "../../models/drop-down-style.enum";
 
 export const Header: FC<LocalizationProps> = ({localizationContent}) => {
     const localizationTypes = useSelector(localizationTypesSelectors.localizationTypeEntitySelectors.selectAll);
@@ -19,7 +20,7 @@ export const Header: FC<LocalizationProps> = ({localizationContent}) => {
                 <a className="header-nav-menu_element ancor" href="#contact_us">{localizationContent.get("contact_us_header_ancor")}</a>
             </nav>
             <div className="header-authorization_container">
-                <DropDown selected={localizationContent.get("lang_header_btn") as string} content={localizationTypes} buttonStyle={ButtonStyle.Dark}/>
+                <DropDown selected={localizationContent.get("lang_header_btn") as string} content={localizationTypes} buttonStyle={DropdownStyle.Dark}/>
                 <Button localizationContent={localizationContent.get("log_in_header_btn") as string} buttonStyle={ButtonStyle.Dark} />
                 <Button localizationContent={localizationContent.get("sign_up_header_btn") as string} buttonStyle={ButtonStyle.Light}/>
             </div>

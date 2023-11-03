@@ -1,7 +1,6 @@
 .btn{
 
     &_dark{
-        max-width: fit-content;
         display: inline-block;
         flex:  0 0 auto;
         font: Lexend;
@@ -17,9 +16,9 @@
         margin: 10px;
         border-color: #9DADF2;
         cursor: pointer;
+        max-width: max-content;
     }
     &_light{
-        max-width: fit-content;
         display: inline-block;
         flex:  0 0 auto;
         background-color: #478BF9;
@@ -36,5 +35,44 @@
         padding: 14px;     
         margin: 10px;
         cursor: pointer;   
+        max-width: max-content;
+    }
+    &_dark-capital{
+        display: inline-block;
+        flex:  0 0 auto;
+        font: Lexend;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        border: solid;
+        border-radius: 48px;
+        border-width: 2px;
+        padding: 20px 72px 20px 72px;
+        margin: 10px;
+        border-color: #9DADF2;
+        cursor: pointer;
+        max-width: fit-content;
+    }
+    &_light-capital{
+        display: inline-block;
+        flex:  0 0 auto;
+        background-color: #478BF9;
+        font: Lexend;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        border: solid;
+        border-radius: 48px;
+        border-width: 2px;
+        padding: 20px 72px 20px 72px !important;
+        border-color: #478BF9;
+        padding: 14px;     
+        margin: 10px;
+        cursor: pointer;   
+        max-width: fit-content;
     }
 }

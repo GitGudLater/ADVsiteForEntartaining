@@ -13,6 +13,7 @@
 }
 
 .ancor:visited, .ancor:active, .ancor:link {
+    transition: all 0.5s ease-out;
     display: block;
     align-self: center;
     font: Lexend;
@@ -21,6 +22,10 @@
     line-height: 20px;
     color: #FFFFFF;
     text-decoration: none;
+}
+.ancor:hover{
+    color: rgba(71, 139, 249, 1);
+    text-decoration: underline;
 }
 
 .header-nav-menu{
