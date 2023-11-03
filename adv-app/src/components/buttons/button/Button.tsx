@@ -2,9 +2,9 @@ import { FC } from "react";
 import { ButtonProps } from "../../../models/button-props.type";
 import "./Button.scss";
 
-export const Button: FC<ButtonProps> = ({localizationContent, buttonStyle}) => {
+export const Button: FC<ButtonProps> = ({localizationContent, buttonStyle, clickHandler}) => {
     const handleButtonClick = () => {
-        // TODO: implement handler logic
+        clickHandler? clickHandler() : console.log("Empty handler");
     }
 
     return(

@@ -4,7 +4,7 @@ import "./DropDown.scss";
 
 export const DropDown: FC<DropDownProps> = (props) => {
     const handleButtonClick = () => {
-        // TODO: implement handler logic
+        props.clickHandler? props.clickHandler() : console.log("Empty handler");
     }
 
     return(
