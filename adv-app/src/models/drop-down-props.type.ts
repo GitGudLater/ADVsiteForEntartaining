@@ -5,4 +5,5 @@ export interface DropDownProps {
     selected: string;
     content: LocalizationTypeListElement[];
     buttonStyle: DropdownStyle;
+    clickHandler?: any;
 }
