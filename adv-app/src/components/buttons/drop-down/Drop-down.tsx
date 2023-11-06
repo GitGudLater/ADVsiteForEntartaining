@@ -20,6 +20,7 @@ export const DropDown: FC<DropDownProps> = (props) => {
 
     return(
         <div className={props.buttonStyle} onClick={() => handleButtonClick()}>
+            {props.svgIcon? props.svgIcon : null}
             {props.selected}
             { isDropDownOpen?
                 <ul className="drop-down_container">
