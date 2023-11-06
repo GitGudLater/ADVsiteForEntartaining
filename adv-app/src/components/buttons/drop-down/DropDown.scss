@@ -1,5 +1,5 @@
 .drop-down{
-
+    position: relative;
     &_dark{
         max-width: fit-content;
         display: inline-block;
@@ -37,4 +37,38 @@
         margin: 10px;  
         cursor: pointer;    
     }
+
+    &_container{
+        transition: all 0.5s ease-out;
+        position: absolute;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        border: solid;
+        border-width: 1px;
+        border-radius: 24px;
+        background-color: rgba(20, 53, 105, 0.9);
+        border-color: #478BF9;
+        margin-top: 20px;
+        margin-left: -15px;
+        overflow: hidden;
+        padding-inline-start: 0px;
+    }
+    &_element {
+        width: 100%;
+        transition: all 0.5s ease-out;
+        background-color: none;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 10px;  
+    }
+    &_element:hover {
+        background-color: #478BF9;
+    }
+
 }
