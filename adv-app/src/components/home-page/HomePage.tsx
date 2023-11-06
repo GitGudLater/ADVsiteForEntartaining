@@ -5,14 +5,7 @@ import './HomePage.scss';
 import { Button } from "../buttons/button/Button";
 import { LocalizationProps } from "../../models/localization-props.type";
 import { ButtonStyle } from "../../models/button-style.enum";
-import { ReactComponent as CrownLong} from "../../logos/animated/crown-long.svg";
-import { ReactComponent as Crown} from "../../logos/animated/crown.svg";
-import { ReactComponent as DollarLong} from "../../logos/animated/dollar-long.svg";
-import { ReactComponent as M} from "../../logos/animated/m.svg";
-import { ReactComponent as Shield} from "../../logos/animated/shield.svg";
-import { ReactComponent as Soccer} from "../../logos/animated/soccer.svg";
-import { ReactComponent as Timer} from "../../logos/animated/timer.svg";
-import { ReactComponent as WorldLong} from "../../logos/animated/world-long.svg";
+import { AnimatedSection } from "./animated-section/AnimatedSection";
 
 export const HomePage: FC<LocalizationProps> = ({localizationContent}) => {
     const blog = useSelector(blogSelectors.blogEntitySelectors.selectAll);
@@ -26,17 +19,7 @@ export const HomePage: FC<LocalizationProps> = ({localizationContent}) => {
                 <h2  className="home-page-headings_element sub-heading">{localizationContent.get("project_name_body_h2")}</h2>
                 <Button localizationContent={localizationContent.get("become_a_partner_body_btn") as string} buttonStyle={ButtonStyle.LightCapital} />
             </div>
-            <div className="home-page-logos"> 
-                <div className="home-page-logos_container">
-
-                </div>
-                <div className="home-page-logos_container">
-
-                </div>
-                <div className="home-page-logos_container">
-
-                </div>
-            </div>
+            <AnimatedSection/>
             <div className="home-page-blog">
                 <h1 className="home-page-blog_heading">{localizationContent.get("blog_body_h1")}</h1>
                 <div className="home-page-blog_content">
