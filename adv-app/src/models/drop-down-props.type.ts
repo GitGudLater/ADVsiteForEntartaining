@@ -6,4 +6,5 @@ export interface DropDownProps {
     content: DropDownTypeListElement[];
     buttonStyle: DropdownStyle;
     clickHandler?: any;
+    svgIcon?: any;
 }

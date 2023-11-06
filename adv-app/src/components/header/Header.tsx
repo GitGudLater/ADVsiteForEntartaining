@@ -10,6 +10,7 @@ import { DropdownStyle } from "../../models/drop-down-style.enum";
 import { useAppDispatch } from "../../store/store.hooks";
 import { LocalizationTypeListActions } from "../../store/localization-type-list/localization-type-list.slice";
 import { fetchLocalizationContent } from "../../store/localization-content/localization-content.thunk";
+import {ReactComponent as Globe} from "../../logos/icons/globe.svg";
 
 export const Header: FC<LocalizationProps> = ({localizationContent}) => {
     const localizationTypes = useSelector(localizationTypesSelectors.localizationTypeEntitySelectors.selectAll);
@@ -29,7 +30,7 @@ export const Header: FC<LocalizationProps> = ({localizationContent}) => {
                 <a className="header-nav-menu_element ancor" href="#contact_us">{localizationContent.get("contact_us_header_ancor")}</a>
             </nav>
             <div className="header-authorization_container">
-                <DropDown clickHandler={(target:string) => changeLocalization(target)} selected={localizationContent.get("lang_header_btn") as string} content={localizationTypes} buttonStyle={DropdownStyle.Dark}/>
+                <DropDown  svgIcon={<Globe/>}  clickHandler={(target:string) => changeLocalization(target)} selected={localizationContent.get("lang_header_btn") as string} content={localizationTypes} buttonStyle={DropdownStyle.Dark}/>
                 <Button localizationContent={localizationContent.get("log_in_header_btn") as string} buttonStyle={ButtonStyle.Dark} />
                 <Button localizationContent={localizationContent.get("sign_up_header_btn") as string} buttonStyle={ButtonStyle.Light}/>
             </div>
