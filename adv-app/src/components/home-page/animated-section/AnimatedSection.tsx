@@ -13,13 +13,35 @@ export const AnimatedSection:FC = () => {
     return(
         <section className="animated-section">
             <div className="animated-section_container left">
-
+                <Shield />
+                <DollarLong />
+                <Soccer />
+                <M />
+                <Shield />
+                <DollarLong />
+                <Soccer />
+                <M />
             </div>
             <div className="animated-section_container center">
-
+                <M />
+                <Timer />
+                <Crown />
+                <WorldLong />
+                <M />
+                <Timer />
+                <Crown />
+                <WorldLong />
             </div>
             <div className="animated-section_container right">
-
+                <DollarLong />
+                <M />
+                <Shield />
+                <Soccer />
+                <Shield />
+                <Crown />
+                <M />
+                <Shield />
+                <Soccer />
             </div>
         </section>
     );
