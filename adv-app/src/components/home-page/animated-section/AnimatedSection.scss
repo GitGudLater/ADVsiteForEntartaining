@@ -1,3 +1,15 @@
+@keyframes moving {
+    from {
+        transform: translateY(0px) ;
+    } 
+    50% {
+        transform: translateY(540px);
+    }
+    to {
+        transform: translateY(1080px);
+    }
+}
+
 .animated-section{
     margin: 5px;
     display: flex;
@@ -14,7 +26,14 @@
 }
 
 .left {
+    position: relative;
+    overflow: hidden;
+    svg {
+        overflow: visible;
+        z-index: 9;
+        animation: moving 10s infinite linear;
 
+    }
 }
 .center {
 
