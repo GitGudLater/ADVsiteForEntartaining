@@ -1,5 +1,5 @@
 .header {
-    margin: 16px 100px 16px 100px;
+    margin: 16px 100px 0px 100px;
     border: solid;
     border-width: 4px;
     border-radius: 64px;
@@ -9,7 +9,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-
+    z-index: 10;
 }
 
 .ancor:visited, .ancor:active, .ancor:link {

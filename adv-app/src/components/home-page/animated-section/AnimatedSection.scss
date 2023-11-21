@@ -1,0 +1,103 @@
+@keyframes first {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes second {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+.animated-section{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    &_container {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        overflow: hidden;
+        height: 1080px;
+        width: 100px;
+    }
+    &_element {
+
+    }
+}
+
+.left, .right, .center {
+
+    &_first {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+    }
+    &_second {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+    }
+
+}
+
+.left:after, .right:after, .center:after {
+    content: "";
+    position:absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(17, 10, 29,0), rgba(17, 10, 29,1) 90%);
+    height: 100px;
+    width: 100%;
+}
+
+.left {
+    opacity: 20%;
+    &_first {
+        animation: first 10s linear infinite;
+
+    }
+    &_second {
+        animation: second 10s linear infinite;
+
+    }
+}
+.center {
+    opacity: 60%;
+    &_first {
+        animation: first 15s linear infinite;
+        animation-direction: reverse;
+
+    }
+    &_second {
+        animation: second 15s linear infinite;
+        animation-direction: reverse;
+
+    }
+}
+.right {
+    opacity: 40%;
+    &_first {
+        animation: first 20s linear infinite;
+
+    }
+    &_second {
+        animation: second 20s linear infinite;
+
+    }
+}

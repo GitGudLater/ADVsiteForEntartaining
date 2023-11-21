@@ -5,6 +5,7 @@ import './HomePage.scss';
 import { Button } from "../buttons/button/Button";
 import { LocalizationProps } from "../../models/localization-props.type";
 import { ButtonStyle } from "../../models/button-style.enum";
+import { AnimatedSection } from "./animated-section/AnimatedSection";
 
 export const HomePage: FC<LocalizationProps> = ({localizationContent}) => {
     const blog = useSelector(blogSelectors.blogEntitySelectors.selectAll);
@@ -18,6 +19,7 @@ export const HomePage: FC<LocalizationProps> = ({localizationContent}) => {
                 <h2  className="home-page-headings_element sub-heading">{localizationContent.get("project_name_body_h2")}</h2>
                 <Button localizationContent={localizationContent.get("become_a_partner_body_btn") as string} buttonStyle={ButtonStyle.LightCapital} />
             </div>
+            <AnimatedSection/>
             <div className="home-page-blog">
                 <h1 className="home-page-blog_heading">{localizationContent.get("blog_body_h1")}</h1>
                 <div className="home-page-blog_content">
