@@ -12,7 +12,7 @@ import './AnimatedSection.scss';
 export const AnimatedSection:FC = () => {
     return(
         <section className="animated-section">
-            <div className="animated-section_container">
+            <div className="animated-section_container left">
                 <div className="left_first">
                     <Shield />
                     <DollarLong />
@@ -34,7 +34,7 @@ export const AnimatedSection:FC = () => {
                     <M />
                 </div>
             </div>
-            <div className="animated-section_container">
+            <div className="animated-section_container center">
                 <div className="center_first">
                     <M />
                     <Timer />
@@ -56,7 +56,7 @@ export const AnimatedSection:FC = () => {
                     <WorldLong />
                 </div>
             </div>
-            <div className="animated-section_container">
+            <div className="animated-section_container right">
                 <div className="right_first">
                     <DollarLong />
                     <M />

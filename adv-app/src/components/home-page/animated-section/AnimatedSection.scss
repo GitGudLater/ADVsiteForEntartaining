@@ -17,7 +17,6 @@
 }
 
 .animated-section{
-    margin: 5px;
     display: flex;
     flex-flow: row nowrap;
     gap: 10px;
@@ -35,6 +34,7 @@
 }
 
 .left, .right, .center {
+
     &_first {
         position: absolute;
         left: 0%;
@@ -53,35 +53,51 @@
     }
 
 }
+
+.left:after, .right:after, .center:after {
+    content: "";
+    position:absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(17, 10, 29,0), rgba(17, 10, 29,1) 90%);
+    height: 100px;
+    width: 100%;
+}
+
 .left {
-    &_first {
-        animation: first 5s linear infinite;
-
-    }
-    &_second {
-        animation: second 5s linear infinite;
-
-    }
-}
-.center {
+    opacity: 20%;
     &_first {
         animation: first 10s linear infinite;
-        animation-direction: reverse;
 
     }
     &_second {
         animation: second 10s linear infinite;
+
+    }
+}
+.center {
+    opacity: 60%;
+    &_first {
+        animation: first 15s linear infinite;
+        animation-direction: reverse;
+
+    }
+    &_second {
+        animation: second 15s linear infinite;
         animation-direction: reverse;
 
     }
 }
 .right {
+    opacity: 40%;
     &_first {
-        animation: first 15s linear infinite;
+        animation: first 20s linear infinite;
 
     }
     &_second {
-        animation: second 15s linear infinite;
+        animation: second 20s linear infinite;
 
     }
 }
