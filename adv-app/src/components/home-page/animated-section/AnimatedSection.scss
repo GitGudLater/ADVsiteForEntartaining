@@ -1,3 +1,21 @@
+@keyframes first {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes second {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
 .animated-section{
     margin: 5px;
     display: flex;
@@ -6,19 +24,64 @@
     &_container {
         display: flex;
         flex-flow: column nowrap;
-        gap: 5px;
+        position: relative;
+        overflow: hidden;
+        height: 1080px;
+        width: 100px;
     }
     &_element {
 
     }
 }
 
-.left {
+.left, .right, .center {
+    &_first {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+    }
+    &_second {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 5px;
+    }
 
+}
+.left {
+    &_first {
+        animation: first 5s linear infinite;
+
+    }
+    &_second {
+        animation: second 5s linear infinite;
+
+    }
 }
 .center {
+    &_first {
+        animation: first 10s linear infinite;
+        animation-direction: reverse;
 
+    }
+    &_second {
+        animation: second 10s linear infinite;
+        animation-direction: reverse;
+
+    }
 }
 .right {
-    
+    &_first {
+        animation: first 15s linear infinite;
+
+    }
+    &_second {
+        animation: second 15s linear infinite;
+
+    }
 }

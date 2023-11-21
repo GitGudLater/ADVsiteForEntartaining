@@ -12,37 +12,75 @@ import './AnimatedSection.scss';
 export const AnimatedSection:FC = () => {
     return(
         <section className="animated-section">
-            <div className="animated-section_container left">
-                <Shield />
-                <DollarLong />
-                <Soccer />
-                <M />
-                <Shield />
-                <DollarLong />
-                <Soccer />
-                <M />
+            <div className="animated-section_container">
+                <div className="left_first">
+                    <Shield />
+                    <DollarLong />
+                    <Soccer />
+                    <M />
+                    <Shield />
+                    <DollarLong />
+                    <Soccer />
+                    <M />
+                </div>
+                <div className="left_second">
+                    <Shield />
+                    <DollarLong />
+                    <Soccer />
+                    <M />
+                    <Shield />
+                    <DollarLong />
+                    <Soccer />
+                    <M />
+                </div>
             </div>
-            <div className="animated-section_container center">
-                <M />
-                <Timer />
-                <Crown />
-                <WorldLong />
-                <M />
-                <Timer />
-                <Crown />
-                <WorldLong />
+            <div className="animated-section_container">
+                <div className="center_first">
+                    <M />
+                    <Timer />
+                    <Crown />
+                    <WorldLong />
+                    <M />
+                    <Timer />
+                    <Crown />
+                    <WorldLong />
+                </div>
+                <div className="center_second">
+                    <M />
+                    <Timer />
+                    <Crown />
+                    <WorldLong />
+                    <M />
+                    <Timer />
+                    <Crown />
+                    <WorldLong />
+                </div>
             </div>
-            <div className="animated-section_container right">
-                <DollarLong />
-                <M />
-                <Shield />
-                <Soccer />
-                <Shield />
-                <Crown />
-                <M />
-                <Shield />
-                <Soccer />
+            <div className="animated-section_container">
+                <div className="right_first">
+                    <DollarLong />
+                    <M />
+                    <Shield />
+                    <Soccer />
+                    <Shield />
+                    <Crown />
+                    <M />
+                    <Shield />
+                    <Soccer />
+                </div>
+                <div className="right_second">
+                    <DollarLong />
+                    <M />
+                    <Shield />
+                    <Soccer />
+                    <Shield />
+                    <Crown />
+                    <M />
+                    <Shield />
+                    <Soccer />
+                </div>
             </div>
+
         </section>
     );
 }
