@@ -1,5 +1,5 @@
 .footer {
-    height:130px;
+    min-height:130px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -62,8 +62,6 @@
         opacity: 0.55;
         rotate: 120deg;
         z-index: -6;
-        right: 15%;
-        top: 590px;
     }
     &_container {
         display: flex;
@@ -81,4 +79,22 @@ svg .bkg {
 }
 svg:hover .bkg {
     fill: url(#paint0_linear_11914_201);
+}
+
+@media (max-width: 1100px) {
+    .footer-social-logo {
+        &_gradient-bkg-btm {
+            right: 15%;
+            top: 1200px;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .footer-social-logo {
+        &_gradient-bkg-btm {
+            right: 5%;
+            top: 700px;
+        }
+    }
 }
