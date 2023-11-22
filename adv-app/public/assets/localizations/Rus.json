@@ -1,0 +1,83 @@
+{
+    "id":2,
+    "name": "Русский",
+    "shortName": "Rus",
+    "content": [
+        {
+            "id": "about_us_header_ancor",
+            "content": "О нас"
+        },
+        {
+            "id": "brands_header_ancor",
+            "content": "Брэнды"
+        },
+        {
+            "id": "commissions_header_ancor",
+            "content": "Комиссии"
+        },
+        {
+            "id": "news_header_ancor",
+            "content": "Новости"
+        },
+        {
+            "id": "contact_us_header_ancor",
+            "content": "Свяжитесь с нами"
+        },
+        {
+            "id": "lang_header_btn",
+            "content": "Ру"
+        },
+        {
+            "id": "log_in_header_btn",
+            "content": "Войти"
+        },
+        {
+            "id": "sign_up_header_btn",
+            "content": "Зарегестрироваться"
+        },
+        {
+            "id": "project_name_body_h1_up",
+            "content": "Игорный"
+        },
+        {
+            "id": "project_name_body_h1_btm",
+            "content": "Дом"
+        },
+        {
+            "id": "project_name_body_h2",
+            "content": "Повысьте рентабельность инвестиций с помощью прямого рекламодателя"
+        },
+        {
+            "id": "become_a_partner_body_btn",
+            "content": "Станьте партнёром"
+        },
+        {
+            "id": "blog_body_h1",
+            "content": "Блог"
+        },
+        {
+            "id": "terms_and_conditions_footer_link",
+            "content": "Условия"
+        },
+        {
+            "id": "cookies_footer_link",
+            "content": "Куки"
+        },
+        {
+            "id": "contacts_footer_link",
+            "content": "Контакты"
+        },
+        {
+            "id": "careers_footer_link",
+            "content": "Начните карьеру"
+        },
+        {
+            "id": "brand_guide_footer_link",
+            "content": "Руководство по бренду"
+        },
+        {
+            "id": "our_social_media_footer_group_heading",
+            "content": "наши соц-сети:"
+        }
+    ]
+}

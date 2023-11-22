@@ -1,0 +1,100 @@
+.footer {
+    min-height:130px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: solid;
+    border-width: 4px 4px 0 4px;
+    border-radius: 64px 64px 0px 0px;
+    padding: 40px 140px 24px 140px;
+    gap: 32px;
+    border-color: rgba(71, 139, 249, 1);
+    margin-top: 80px;
+    background-color: #1e1231a9;
+    z-index: 10;
+}
+
+.footer-links {
+    &_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &_element:visited, &_element:active, &_element:link {
+        transition: all 0.5s ease-out;
+        display: block;
+        align-self: center;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &_element:hover{
+        color: rgba(71, 139, 249, 1);
+        text-decoration: underline;
+    }
+}
+
+.footer-social-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 14px;
+    overflow: hidden;
+    &_heading {
+        align-self: flex-start;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        cursor: default;
+    }
+    &_gradient-bkg-btm {
+        position: absolute;
+        width: 474px;
+        height: 474px;
+        background: radial-gradient(50% 50%, rgba(71, 139, 249, 0.5),#110A1D);
+        opacity: 0.55;
+        rotate: 120deg;
+        z-index: -6;
+    }
+    &_container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    &_element {
+        cursor: pointer;
+    }
+}
+
+svg .bkg {
+    transition: all 0.5s ease-out;
+}
+svg:hover .bkg {
+    fill: url(#paint0_linear_11914_201);
+}
+
+@media (max-width: 1100px) {
+    .footer-social-logo {
+        &_gradient-bkg-btm {
+            right: 15%;
+            top: 1200px;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .footer-social-logo {
+        &_gradient-bkg-btm {
+            right: 5%;
+            top: 700px;
+        }
+    }
+}

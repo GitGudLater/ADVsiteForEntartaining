@@ -1,0 +1,220 @@
+@media (min-width: 1401px) {
+    
+    @keyframes first {
+        from {
+            top: 0%;
+        }
+        to {
+            top: 100%;
+        }
+    }
+
+    @keyframes second {
+        from {
+            top: -100%;
+        }
+        to {
+            top: 0%;
+        }
+    }
+
+    .animated-section{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        &_container {
+            display: flex;
+            flex-flow: column nowrap;
+            position: relative;
+            overflow: hidden;
+            height: 1080px;
+            width: 100px;
+        }
+        &_element {
+
+        }
+    }
+
+    .left, .right, .center {
+
+        &_first {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 5px;
+        }
+        &_second {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 5px;
+        }
+
+    }
+
+    .left:after, .right:after, .center:after {
+        content: "";
+        position:absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        background-image: linear-gradient(to bottom, rgba(17, 10, 29,0), rgba(17, 10, 29,1) 90%);
+        height: 100px;
+        width: 100%;
+    }
+
+    .left {
+        opacity: 20%;
+        &_first {
+            animation: first 10s linear infinite;
+
+        }
+        &_second {
+            animation: second 10s linear infinite;
+
+        }
+    }
+    .center {
+        opacity: 60%;
+        &_first {
+            animation: first 15s linear infinite;
+            animation-direction: reverse;
+
+        }
+        &_second {
+            animation: second 15s linear infinite;
+            animation-direction: reverse;
+
+        }
+    }
+    .right {
+        opacity: 40%;
+        &_first {
+            animation: first 20s linear infinite;
+
+        }
+        &_second {
+            animation: second 20s linear infinite;
+
+        }
+    }
+
+    .long {
+        display: block;
+    }
+
+    .rotated {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    @keyframes first {
+        from {
+            left: 0%;
+        }
+        to {
+            left: 100%;
+        }
+    }
+    
+    @keyframes second {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    
+    .animated-section{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        &_container {
+            display: flex;
+            flex-flow: column nowrap;
+            position: relative;
+            overflow: hidden;
+            justify-content: space-around;
+            width: 1400px;
+            height: 100px;
+            gap: 40px;
+        }
+        &_element {
+    
+        }
+    }
+    
+    .left, .right, .center {
+        &_first {
+            justify-content: space-around;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 40px;
+        }
+        &_second {
+            justify-content: space-around;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 40px;
+        }
+    
+    }
+    
+    .left {
+        opacity: 20%;
+        &_first {
+            animation: first 10s linear infinite;
+    
+        }
+        &_second {
+            animation: second 10s linear infinite;
+    
+        }
+    }
+    .center {
+        opacity: 60%;
+        &_first {
+            animation: first 15s linear infinite;
+            animation-direction: reverse;
+    
+        }
+        &_second {
+            animation: second 15s linear infinite;
+            animation-direction: reverse;
+    
+        }
+    }
+    .right {
+        opacity: 40%;
+        &_first {
+            animation: first 20s linear infinite;
+    
+        }
+        &_second {
+            animation: second 20s linear infinite;
+    
+        }
+    }
+
+    .long {
+        display: none;
+    }
+
+    .rotated {
+        display: block;
+    }
+}

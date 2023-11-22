@@ -1,0 +1,98 @@
+
+@media (min-width: 900px) {
+    .content {
+        display: block;
+    }
+}
+
+.drop-down{
+    &_dark{
+        position: relative;
+        max-width: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 8px;
+        flex:  0 0 auto;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        border: solid;
+        border-radius: 24px;
+        border-width: 2px;
+        padding: 14px;
+        margin: 10px;
+        border-color: #9DADF2;
+        cursor: pointer;
+    }
+    &_light{
+        position: relative;
+
+        max-width: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 8px;
+        flex:  0 0 auto;
+        background-color: #478BF9;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        border: solid;
+        border-radius: 24px;
+        border-width: 2px;
+        border-color: #478BF9;
+        padding: 14px;  
+        margin: 10px;  
+        cursor: pointer;    
+    }
+
+    &_container{
+        transition: all 0.5s ease-out;
+        position: absolute;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        border: solid;
+        border-width: 1px;
+        border-radius: 24px;
+        background-color: rgba(20, 53, 105, 0.9);
+        border-color: #478BF9;
+        margin-top: 45px;
+        margin-left: -15px;
+        overflow: hidden;
+        padding-inline-start: 0px;
+    }
+    &_element {
+        width: 100%;
+        transition: all 0.5s ease-out;
+        background-color: none;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 10px;  
+    }
+    &_element:hover {
+        background-color: #478BF9;
+    }
+
+}
+
+svg{
+    align-self: center;
+}
+
+
+@media (max-width: 900px) {
+    .content {
+        display: none;
+    }
+}
