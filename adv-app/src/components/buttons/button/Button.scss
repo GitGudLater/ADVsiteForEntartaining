@@ -16,8 +16,8 @@
         border-radius: 24px;
         border-width: 2px;
         padding: 14px;
-        margin: 10px;
         border-color: #9DADF2;
+        margin: 10px;
         cursor: pointer;
         max-width: max-content;
     }
@@ -39,7 +39,44 @@
         border-width: 2px;
         border-color: #478BF9;
         padding: 14px;     
+        cursor: pointer;   
         margin: 10px;
+        max-width: max-content;
+    }
+    &_dark-simple{
+        max-width: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 8px;
+        flex:  0 0 auto;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 14px;
+
+        cursor: pointer;
+        max-width: max-content;
+    }
+    &_light-simple{
+        max-width: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 8px;
+        flex:  0 0 auto;
+        background-color: #478BF9;
+        font: Lexend;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        border-radius: 24px;
+        border-width: 2px;
+        border-color: #478BF9;
+        padding: 14px;     
         cursor: pointer;   
         max-width: max-content;
     }
@@ -91,4 +128,25 @@
 
 svg{
     align-self: center;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        &_dark {
+            max-width: 100%;
+            margin: 0px;
+        }
+        &_light {
+            max-width: 100%;
+            margin: 0px;
+        }
+        &_dark-capital {
+            max-width: 100%;
+
+        }
+        &_light-capital {
+            max-width: 100%;
+
+        }
+    }
 }

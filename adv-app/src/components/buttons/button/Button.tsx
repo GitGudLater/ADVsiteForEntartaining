@@ -10,7 +10,7 @@ export const Button: FC<ButtonProps> = ({localizationContent, buttonStyle, click
     return(
         <div className={buttonStyle} onClick={() => handleButtonClick()}>
             {svgIcon? svgIcon : null}
-            {localizationContent}
+            {localizationContent? localizationContent : null}
         </div>
     );
 }
