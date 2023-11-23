@@ -16,6 +16,8 @@
         left: -30px;
     }
     &_container {
+        margin-top: 20px;
+        margin-bottom: 20px;
         flex: 0 0 auto;
         display: flex;
         flex-flow: column nowrap;
@@ -31,6 +33,7 @@
 }
 
 .home-page-blog {
+    margin-top: 20px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
