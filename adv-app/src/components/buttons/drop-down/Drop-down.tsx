@@ -1,8 +1,10 @@
-import { FC, useState } from "react";
+import { FC, useCallback, useState } from "react";
 import { DropDownProps } from "../../../models/drop-down-props.type";
 import "./DropDown.scss";
 
 export const DropDown: FC<DropDownProps> = (props) => {
+    const memoizedHandler = useCallback((selectedListElementID:string) => props.clickHandler(selectedListElementID), []);
+
     const handleButtonClick = () => {
         setDropDownOpenStatus(!isDropDownOpen);
     }
@@ -13,7 +15,7 @@ export const DropDown: FC<DropDownProps> = (props) => {
     }
 
     const delegatedFunctionHandler = (selectedListElementID:string) => {
-        props.clickHandler? props.clickHandler(selectedListElementID) : console.log("Empty handler");
+        props.clickHandler? memoizedHandler(selectedListElementID) : console.log("Empty handler");
     }
 
     const [isDropDownOpen, setDropDownOpenStatus] = useState<boolean>(false);
