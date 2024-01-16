@@ -1,10 +1,12 @@
-import { FC } from "react";
+import { FC, useCallback } from "react";
 import { ButtonProps } from "../../../models/button-props.type";
 import "./Button.scss";
 
 export const Button: FC<ButtonProps> = ({localizationContent, buttonStyle, clickHandler, svgIcon}) => {
+    const memoizedHandler = useCallback(() => clickHandler(), []);
+
     const handleButtonClick = () => {
-        clickHandler? clickHandler() : console.log("Empty handler");
+        clickHandler? memoizedHandler() : console.log("Empty handler");
     }
 
     return(
