@@ -4,5 +4,6 @@ export interface ButtonProps {
     localizationContent?: string;
     buttonStyle: ButtonStyle;
     clickHandler?: any;
+    clickHandlerArgs?: any;
     svgIcon?: any; 
 }

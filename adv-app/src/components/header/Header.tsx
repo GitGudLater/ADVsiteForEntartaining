@@ -41,7 +41,7 @@ export const Header: FC<LocalizationProps> = ({localizationContent}) => {
                 </div>
                 <div className="header-button_container low-resolution">
                     <DropDown  svgIcon={<Globe/>}  clickHandler={(target:string) => changeLocalization(target)} selected={localizationContent.get("lang_header_btn") as string} content={localizationTypes} buttonStyle={DropdownStyle.Dark}/>
-                    <Button buttonStyle={ButtonStyle.DarkSimple} svgIcon={isSubmenuOpen? <Exit/> : <Menu/>} clickHandler={() => changeSubmenuOpenStatus(!isSubmenuOpen)} />
+                    <Button buttonStyle={ButtonStyle.DarkSimple} svgIcon={isSubmenuOpen? <Exit/> : <Menu/>} clickHandler={changeSubmenuOpenStatus} clickHandlerArgs={!isSubmenuOpen}/>
                 </div>
             </section>
             { isSubmenuOpen ?
